@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "8021d4ee-7628-4ef5-a4c9-babeaf6271a4",
+		"name": "My Mock Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30187478",
+		"_collection_link": "https://cloudy-resonance-30262.postman.co/workspace/me-Workspace~cfe5bb6b-8da1-4bbe-875b-2c187479df4f/collection/30187478-8021d4ee-7628-4ef5-a4c9-babeaf6271a4?action=share&source=collection_link&creator=30187478"
+	},
+	"item": [
+		{
+			"name": "Untitled Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"{{$randomEmail}}\",\r\n    \"phone\":\"{{$randomPhoneNumber}}\",\r\n    \"company_name\":\"{{$randomCompanyName}}\",\r\n    \"guid\":\"{{$guid}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/example",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"example"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/example",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"example"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "liyuvkujtvujktgv"
+				}
+			]
+		},
+		{
+			"name": "Untitled Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "Mock Server is working"
+				}
+			]
+		},
+		{
+			"name": "https://46b10588-e60f-46c2-8d66-611bf3514e63.mock.pstmn.io",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"John\",\r\n\"surname\":\"Johnny\",\r\n\"occupation\":\"QA\",\r\n\"id\":42,\r\n\"tasks\":[\"Work1\", \"Work2\", \"Work3\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://46b10588-e60f-46c2-8d66-611bf3514e63.mock.pstmn.io",
+					"protocol": "https",
+					"host": [
+						"46b10588-e60f-46c2-8d66-611bf3514e63",
+						"mock",
+						"pstmn",
+						"io"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://46b10588-e60f-46c2-8d66-611bf3514e63.mock.pstmn.io",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://46b10588-e60f-46c2-8d66-611bf3514e63.mock.pstmn.io",
+					"protocol": "https",
+					"host": [
+						"46b10588-e60f-46c2-8d66-611bf3514e63",
+						"mock",
+						"pstmn",
+						"io"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://46b10588-e60f-46c2-8d66-611bf3514e63.mock.pstmn.io"
+		}
+	]
+}
